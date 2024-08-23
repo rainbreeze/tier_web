@@ -1,0 +1,199 @@
+body {
+    font-family: "Yeon Sung", system-ui;
+    font-weight: 600;
+    font-size: 20px;
+    height: 2000px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.inner {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header > .inner {
+    height: 120px;
+    background-color: beige;
+}
+
+header .logo > img {
+    width: 100px;
+    height: 100px;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    cursor: pointer;
+}
+
+header .sub-menu {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+header .sub-menu .list {
+    display: flex;
+}
+
+header .sub-menu .list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header .sub-menu .list li::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: black;
+    transform: translateX(-10px);
+}
+
+header .sub-menu .list li:first-child::before {
+    display: none;
+}
+
+header .sub-menu .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+header .sub-menu .search input {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+header .sub-menu .search input:focus {
+    width: 180px;
+}
+
+header .sub-menu .search .material-icons {
+    position: absolute;
+    left: 7px;
+}
+
+header .sub-menu .search.focused .material-icons {
+    display: none;
+}
+
+.banners {
+    position: fixed;
+    top: 132px;
+    right: 15px;
+}
+
+.banners img {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.banners .banner1 img {
+    width: 180px;
+    height: 220px;
+}
+
+.banners .banner2 img {
+    width: 180px;
+}
+
+header .main-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header .main-menu > ul {
+    display: flex;
+}
+
+header .main-menu .item {
+    display: flex;
+}
+
+header .main-menu .item .item__name {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+header .main-menu .item:hover .item__name {
+    color: beige;
+    background-color: black;
+}
+
+header .main-menu .item .item__contents{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    background-color: black;
+}
+
+header .main-menu .item:hover .item__contents{
+    display: block;
+}
+
+header .main-menu .item .item__contents .contents_texture {
+    background-image: url(./images/yellow_pattern.jpg);
+}
+
+header .main-menu .item .item__contents .contents_texture h4 {
+    padding: 10px 0;
+}
+
+header .main-menu .item .item__contents .contents_texture p {
+    padding-bottom: 5px;
+}
+
+header .main-menu .item .item__contents .contents_list > ul {
+    padding: 20px;
+    display: flex;
+}
+
+header .main-menu .item .item__contents .contents_list > ul li {
+    width: 240px;
+    text-align: center;
+}
+
+header .main-menu .item .item__contents .contents_list > ul li > h4{
+    color: white;
+    font-size: 28px;
+    padding: 15px 0;
+}
+
+header .main-menu .item .item__contents .contents_list > ul li > h4:hover{
+    color: yellow;
+}
+
+header .main-menu .item .item__contents .contents_list > ul li > ul li:hover{
+    color: yellow;
+}
+
+header .main-menu .item .item__contents .contents_list > ul li > ul li {
+    color: white;
+    padding: 5px 0;
+}
