@@ -260,6 +260,40 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     top: 80px;
 }
 
+.visual .btn.btn--pink {
+    position: absolute;
+    top: 55px;
+    left: 350px;
+}
+
 .fade-in {
     opacity: 0;
+}
+
+.btn {
+    box-sizing: border-box;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.6s;
+    z-index: 10;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn.btn--pink {
+    color: black;
+    border-color: black;
+}
+
+
+.btn.btn--pink:hover {
+    color: pink;
+    background-color: black;
 }
