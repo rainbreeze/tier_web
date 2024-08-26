@@ -44,3 +44,31 @@ new Swiper ('.notice .swiper', {
     autoplay: true,
     loop: true
 });
+
+const promotionBTN = document.querySelector('.notice .inner__right .material-icons');
+const promotionEl = document.querySelector('.promotion');
+
+promotionBTN.addEventListener('click', function(){
+    if(promotionEl.classList.contains('hide')){
+        promotionEl.classList.remove('hide');
+    }
+    else{
+        promotionEl.classList.add('hide');
+    }
+});
+
+new Swiper ('.promotion .swiper', {
+    loop : true,
+    autoplay : true,
+    slidesPerView : 3,
+    spaceBetween : 10,
+    centeredSlides: true,
+    pagination : {
+        el : '.promotion .swiper-pagination',
+        clickable : true
+    },
+    navigation : {
+        prevEl : '.promotion .swiper-button-prev',
+        nextEl : '.promotion .swiper-button-next',
+    }
+});

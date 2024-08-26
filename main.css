@@ -334,8 +334,21 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
 
 .notice .inner__right {
     width: 30%;
-    background-color: white
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.notice .inner__right h2 {
+    margin-right: 20px;
+}
+
+.notice .inner__right .material-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 .notice .inner__left .swiper {
     height: 62px;
@@ -365,4 +378,78 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.promotion {
+    height: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.promotion .swiper {
+    height: 450px;
+    width: calc(700px * 3 + 10px * 2);
+    flex-shrink: 0;
+}
+
+.promotion.hide {
+    display: none;
+}
+
+.promotion .swiper-slide img {
+    height: 450px;
+    width: 700px;
+    object-position: center;
+}
+
+.promotion .swiper-slide {
+    position: relative;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+.promotion .swiper-slide-active {
+    opacity: 1;
+}
+
+.promotion .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+}
+
+.promotion .swiper-pagination-bullet-active {
+    background-image: url(./images/promotion_slide_pager_on.png);
+    background-color: transparent;
+}
+
+.promotion .swiper-pagination {
+    bottom: 40px !important;
+}
+
+.promotion .swiper-button-prev, .promotion .swiper-button-next {
+    top: 75%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+}
+
+.promotion .swiper-button-prev::after, .promotion .swiper-button-next::after{
+    display: none;
+}
+
+.promotion .swiper-button-prev:hover , .promotion .swiper-button-next:hover {
+    color: white;
+    background-color: black;
+}
+
+.promotion .swiper-button-prev {
+    left: 28%;
+}
+.promotion .swiper-button-next {
+    right: 28%;
 }
