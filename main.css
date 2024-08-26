@@ -453,3 +453,11 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
 .promotion .swiper-button-next {
     right: 28%;
 }
+
+.promotion .swiper-slide .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
