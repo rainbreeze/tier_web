@@ -297,3 +297,72 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     color: pink;
     background-color: black;
 }
+
+.notice {
+    position: relative;
+}
+
+.notice .bg-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+}
+
+
+.notice .bg-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    right: 0;
+}
+
+.notice > .inner {
+    height: 62px;
+    display: flex;
+}
+
+.notice .inner__left {
+    width: 70%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .inner__right {
+    width: 30%;
+    background-color: white
+}
+
+.notice .inner__left .swiper {
+    height: 62px;
+    flex-grow: 1;
+}
+
+.notice .inner__left h2 {
+    color: white;
+    margin-right: 20px;
+}
+
+.notice .inner__left .notice_circle {
+    width: 62px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .inner__left .notice_circle .material-icons {
+    color: white;
+    font-size: 30px;
+}
+
+.notice .swiper .swiper-slide {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

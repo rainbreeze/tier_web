@@ -38,3 +38,9 @@ fadeEls.forEach(function(fadeEl, index){
         delay : 0.7 * (index + 1)
     })
 });
+
+new Swiper ('.notice .swiper', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});
