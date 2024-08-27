@@ -261,7 +261,9 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
 }
 
 .visual .btn.btn--pink {
+    cursor: pointer;
     position: absolute;
+    z-index: 1;
     top: 55px;
     left: 350px;
 }
@@ -460,4 +462,122 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.rewards {
+    position: relative;
+    overflow: hidden;
+}
+
+.rewards .bg-left {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    background-color: rgb(252, 204, 226);
+}
+
+.rewards .bg-right {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    background-color: rgb(255, 253, 230);
+}
+
+.rewards .inner {
+    height: 200px;
+}
+
+.rewards .rewards1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -50px;
+    left: -160px;
+}
+
+.rewards .rewards2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    left: 320px;
+}
+
+.rewards .btn-group {
+    position: absolute;
+    right: 33px;
+    bottom: 55px;
+    width: 245px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards .btn.sign-up {
+    width: 130px;
+    margin-right: 5px;
+}
+
+.rewards .btn.sign-in {
+    width: 110px;
+}
+
+.rewards .btn.gift {
+    flex-grow: 1;
+    margin-top: 5px;
+}
+
+.btn.btn--reverse {
+    background-color: black;
+    color: white;
+}
+
+.btn.btn--reverse:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.youtube {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    background-color: rgb(252, 204, 226);;
+}
+
+.youtube .youtube_area {
+    --width : 1920px;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * 9 / 16);
+    top: 50%;
+    left: 50%;
+    margin-left: calc(var(--width) / -2);
+    margin-top: calc(var(--width) * 9 / 16 / -2);
+}
+
+#player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.youtube .youtube_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(./images/video_cover_pattern.png);
+}
+
+.youtube .floating1 {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+}
+
+.youtube .floating2 {
+    position: absolute;
+    top: 530px;
+    right: 120px;
 }

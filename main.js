@@ -72,3 +72,21 @@ new Swiper ('.promotion .swiper', {
         nextEl : '.promotion .swiper-button-next',
     }
 });
+
+gsap.to('.floating1', 2 , {
+    delay : 1,
+    y : 25,
+    repeat : -1,
+    yoyo : 1,
+    ease : 'expo.out',
+    rotation : 44
+});
+
+gsap.to('.floating2', 2 , {
+    delay : 1,
+    x : -35,
+    repeat : -1,
+    yoyo : 1,
+    ease : 'bounce.out',
+    rotation : 33
+});
