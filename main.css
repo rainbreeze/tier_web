@@ -13,7 +13,7 @@ header {
     width: 100%;
     top: 0;
     position: fixed;
-    z-index: 9;
+    z-index: 99;
     background-color: white;
     border-bottom: 1px solid pink;
 }
@@ -580,4 +580,205 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     position: absolute;
     top: 530px;
     right: 120px;
+}
+
+.lolchess-section {
+    background-image: url(./images/sec_bg1.png);
+    background-size: cover;
+}
+
+.lolchess-section .inner {
+    height: 400px;
+}
+
+.slaythespire-section {
+    background-image: url(./images/aasd.png);
+    background-size: cover;
+}
+
+.slaythespire-section .inner {
+    height: 380px;
+}
+
+.lol-section {
+    background-image: url(./images/sec_bg3.png);
+    background-size: cover;
+}
+
+.lol-section .inner {
+    height: 450px;
+}
+
+.section-3D {
+    background-image: url(./images/ccccc.png);
+    background-size: cover;
+}
+
+.section-3D .inner {
+    height: 500px;
+}
+
+.awc2024-section {
+    background-image: url(./images/bbbbb.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.awc2024-section .inner {
+    height: 500px;
+}
+
+.lolchess-section .lolchess_img1 {
+    position: absolute;
+    transform: rotate(3deg);
+    left: -200px;
+    top: 10px;
+    width: 35%;
+    height: auto;
+}
+
+.lolchess-section .lolchess_img2 {
+    position: absolute;
+    transform: rotate(-3deg);
+    left: 60px;
+    top: 220px;
+    width: 30%;
+    height: auto;
+}
+
+.lolchess-section .lolchess_img3 {
+    position: absolute;
+    left: 390px;
+    top: -50px;
+    width: 70%;
+    height: auto;
+}
+
+.lolchess-section .lolchess_btn {
+    position: absolute;
+    bottom: 60px;
+    width: 220px;
+    left: 660px;
+}
+
+.slaythespire-section .slay_img1 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    transform: rotate(3deg);
+    left: -100px;
+}
+
+.slaythespire-section .slay_img2 {
+    position: absolute;
+    width: 40%;
+    top: 80px;
+    height: auto;
+    transform: rotate(3deg);
+    left: -50px;
+}
+
+.slaythespire-section .slay_img3 {
+    position: absolute;
+    width: 70%;
+    top: -80px;
+    height: auto;
+    left: 350px;
+}
+
+.slaythespire-section .btn {
+    width: 160px;
+    position: absolute;
+    bottom: 25px;
+    left: 655px;
+}
+
+.lol-section .lol_img1 {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    transform: rotate(-4deg);
+    left: -70px;
+    top: 50px;
+}
+
+.lol-section .lol_img2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 450px;
+    top: -140px;
+}
+
+.lol-section .btn {
+    position: absolute;
+    left: 810px;
+    bottom: 85px;
+}
+
+.awc2024-section .awc_img1 {
+    position: absolute;
+    left: -200px;
+    transform: rotate(-4deg);
+    top: 20px;
+    width: 60%;
+    height: auto;
+}
+
+.awc2024-section .awc_img2 {
+    position: absolute;
+    width: 40%;
+    left: 220px;
+    transform: rotate(-4deg);
+    height: auto;
+    bottom: 0;
+}
+
+.awc2024-section .awc_img3 {
+    position: absolute;
+    left: 500px;
+    top: -80px;
+    width: 80%;
+    height: auto;
+}
+
+.awc2024-section .btn {
+    position: absolute;
+    left: 866px;
+    bottom: 85px;
+}
+
+.back-to-position {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+
+.back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+
+.back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+
+.back-to-position.delay-3 {
+    transition-delay: .9s;
+}
+
+.show .back-to-position{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.show .back-to-position.deg {
+    transform: translateX(0) rotate(3deg);
+    opacity: 1;
 }

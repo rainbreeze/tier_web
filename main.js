@@ -90,3 +90,15 @@ gsap.to('.floating2', 2 , {
     ease : 'bounce.out',
     rotation : 33
 });
+
+const spyEl = document.querySelectorAll('section.scroll-spy');
+
+spyEl.forEach(function(spyEl){
+    new ScrollMagic
+    .Scene({
+        triggerElement : spyEl,
+        triggerHook : .9
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});
