@@ -638,7 +638,6 @@ header .main-menu .item .item__contents .contents_list > ul li > ul li {
     transform: rotateY(180deg);
     transition: 1s;
 }
-
 .section-3D .medal .front_plane {
     transition: 1s;
     position: absolute;
