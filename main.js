@@ -16,16 +16,27 @@ inputEl.addEventListener('blur', function(){
 });
 
 const bannersEl = document.querySelector('.banners');
+const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', function(){
     if(scrollY > 500){
         gsap.to(bannersEl, 1, {
             opacity: 0
         });
+
+        gsap.to(toTopEl, 1, {
+            opacity: 1,
+            x: 0
+        });
     }
     if(scrollY <= 500){
         gsap.to(bannersEl, 1, {
             opacity: 1
+        });
+
+        gsap.to(toTopEl, 1, {
+            opacity: 0,
+            x: 100
         });
     }
 });
@@ -101,4 +112,24 @@ spyEl.forEach(function(spyEl){
     })
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
+});
+
+new Swiper('.awards .swiper', {
+    autoplay : true,
+    loop : true,
+    slidesPerView : 3,
+    navigation : {
+        prevEl : '.awrads .swiper-button-prev',
+        nextEl : '.awards .swiper-button-next'
+    },
+    centeredSlides : true
+});
+
+const ThisYear = document.querySelector('.this-year');
+ThisYear.textContent = new Date().getFullYear();
+
+toTopEl.addEventListener('click', function(){
+    gsap.to(window, .6, {
+        scrollTo: 0
+    });
 });
